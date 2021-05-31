@@ -8,5 +8,18 @@
   <form>
     <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
   </form>
+
+  <script>
+    var text = document.querySelector("#text");
+    var input = document.querySelector("#name");
+
+    input.addEventListener("keyup", () => {
+    text.textContent = input.value;
+    });
+
+    input.addEventListener("keydown", () => {
+    text.textContent = input.value;
+    });
+  </script>
 </body>
 </html>
